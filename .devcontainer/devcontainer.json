@@ -1,0 +1,15 @@
+{
+    "name": "saitama_wanderer",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "api",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.tabSize": 4,
+        "go.useLanguageServer": true
+    },
+    "extensions": [
+        "golang.go"
+    ]
+}

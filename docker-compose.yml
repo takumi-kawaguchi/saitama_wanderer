@@ -1,0 +1,15 @@
+version: '3'
+services:
+    # go api server
+    api:
+        build:
+            context: ./api
+            dockerfile: Dockerfile
+        container_name: api-server
+        ports: 
+            - 8000:8000
+        restart: always
+        command: sleep infinity
+        # tty: true
+        volumes: 
+            - ./api:/go/src
